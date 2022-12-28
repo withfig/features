@@ -50,7 +50,7 @@ chmod 700 ${TMP_DIR}
 echo "(*) Installing fig..."
 
 curl -sSL -o ${TMP_DIR}/fig.tar.xz "https://repo.fig.io/generic/${FIG_CHANNEL}/asset/${FIG_VERSION}/${architecture}/fig_headless.tar.xz"
-tar -xzf "${TMP_DIR}/fig.tar.xz" -C "${TMP_DIR}" fig
+tar -xJf "${TMP_DIR}/fig.tar.xz" -C "${TMP_DIR}" fig
 cp -pr ${TMP_DIR}/fig/usr /usr
 
 # Clean up
