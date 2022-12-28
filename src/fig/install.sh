@@ -32,7 +32,7 @@ check_packages() {
 export DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies
-check_packages curl git tar
+check_packages curl git tar xz-utils
 
 architecture="$(uname -m)"
 case $architecture in
