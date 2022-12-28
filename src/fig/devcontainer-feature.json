@@ -1,0 +1,22 @@
+{
+  "name": "Fig",
+  "id": "fig",
+  "version": "1.0.0",
+  "description": "Install [fig](https://fig.io) CLI and integrations",
+  "documentationURL": "https://fig.io/user-manual",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposal": ["latest"],
+      "default": "latest",
+      "description": "Select or enter a fig version"
+    },
+    "channel": {
+      "type": "string",
+      "proposal": ["stable", "beta", "qa", "nightly"],
+      "default": "stable",
+      "description": "Select or enter a fig channel"
+    }
+  },
+  "installsAfter": ["ghcr.io/devcontainers/features/common-utils"]
+}
