@@ -16,10 +16,6 @@ set -e
 # Optional: Import test library bundled with the devcontainer CLI
 source dev-container-features-test-lib
 
-echo $PATH
-
-ls -al /usr/bin
-
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
 check "fig version" fig --version
