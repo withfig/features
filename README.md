@@ -1,5 +1,7 @@
 # Fig Dev Container Features
 
+Add the Fig CLI to a Dev Container
+
 ## Usage
 
 To use the feature from this repository, add the desired features to devcontainer.json.
