@@ -7,13 +7,13 @@
   "options": {
     "version": {
       "type": "string",
-      "proposal": ["latest"],
+      "proposals": ["latest"],
       "default": "latest",
       "description": "Select or enter a fig version"
     },
     "channel": {
       "type": "string",
-      "proposal": ["stable", "beta", "qa", "nightly"],
+      "enum": ["stable", "beta", "qa", "nightly"],
       "default": "stable",
       "description": "Select or enter a fig channel"
     }
