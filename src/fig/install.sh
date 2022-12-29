@@ -51,7 +51,7 @@ echo "(*) Installing fig..."
 
 curl -sSL -o ${TMP_DIR}/fig.tar.xz "https://repo.fig.io/generic/${FIG_CHANNEL}/asset/${FIG_VERSION}/${architecture}/fig_headless.tar.xz"
 tar -xJf "${TMP_DIR}/fig.tar.xz" -C "${TMP_DIR}" usr
-cp -rpv ${TMP_DIR}/usr /usr
+cp -rpv ${TMP_DIR}/usr /
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
