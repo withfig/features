@@ -1,7 +1,7 @@
 
-# Fig
+# Fig (fig)
 
-Installs all Fig headless components
+Install [fig](https://fig.io) CLI and integrations
 
 ## Example Usage
 
@@ -13,8 +13,13 @@ Installs all Fig headless components
 
 ## Options
 
-| Options Id | Description              | Type   | Default Value |
-| ---------- | ------------------------ | ------ | ------------- |
-| version    | Select a version of fig  | string | latest        |
-| channel    | Select a release channel | string | stable        |
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| version | Select or enter a fig version | string | latest |
+| channel | Select or enter a fig channel | string | stable |
 
+
+
+---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/withfig/features/blob/main/src/fig/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
