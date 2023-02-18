@@ -7,6 +7,7 @@ rm -rf /var/lib/apt/lists/*
 
 FIG_VERSION=${VERSION:-"latest"}
 FIG_CHANNEL=${CHANNEL:-"stable"}
+FIG_INTEGRATIONS=${INTEGRATIONS:-"dotfiles"}
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'
@@ -55,5 +56,21 @@ cp -rpv ${TMP_DIR}/usr /
 
 # Clean up
 rm -rf /var/lib/apt/lists/*
+
+# Install integrations
+if [ -n "$FIG_INTEGRATIONS" ]; then
+    echo "(*) Installing integrations..."
+    for integration in $(echo $FIG_INTEGRATIONS | sed "s/,/ /g")
+    do
+        STATUS=$(sudo -u $_REMOTE_USER fig integration install $integration)
+        if [[ $? -ne 0 ]]; then
+            echo "(!) Failed to install integration: $integration"
+            echo "(!) $STATUS"
+            exit 1
+        else
+            echo "(*) Installed integration: $integration"
+        fi
+    done
+fi
 
 echo "Done!"
