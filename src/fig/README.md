@@ -17,6 +17,7 @@ Install [fig](https://fig.io) CLI and integrations
 |-----|-----|-----|-----|
 | version | Select or enter a fig version | string | latest |
 | channel | Select or enter a fig channel | string | stable |
+| integrations | Integrations to install at the end of the script, a comma-separated list of integrations | string | dotfiles |
 
 
 
