@@ -16,6 +16,12 @@
       "enum": ["stable", "beta", "qa", "nightly"],
       "default": "stable",
       "description": "Select or enter a fig channel"
+    },
+    "integrations": {
+      "type": "string",
+      "proposals": ["dotfiles"],
+      "default": "dotfiles",
+      "description": "Integrations to install at the end of the script, a comma-separated list of integrations"
     }
   },
   "installsAfter": ["ghcr.io/devcontainers/features/common-utils"]
