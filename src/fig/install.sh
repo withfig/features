@@ -7,7 +7,7 @@ rm -rf /var/lib/apt/lists/*
 
 FIG_VERSION=${VERSION:-"latest"}
 FIG_CHANNEL=${CHANNEL:-"stable"}
-FIG_INTEGRATIONS=${INTEGRATIONS:-"dotfiles"}
+FIG_INTEGRATIONS=${INTEGRATIONS:-"dotfiles,ssh"}
 
 if [ "$(id -u)" -ne 0 ]; then
     echo -e 'Script must be run as root. Use sudo, su, or add "USER root" to your Dockerfile before running this script.'

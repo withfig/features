@@ -1,7 +1,7 @@
 {
   "name": "Fig",
   "id": "fig",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Install [fig](https://fig.io) CLI and integrations",
   "documentationURL": "https://fig.io/user-manual",
   "options": {
@@ -19,8 +19,8 @@
     },
     "integrations": {
       "type": "string",
-      "proposals": ["dotfiles"],
-      "default": "dotfiles",
+      "proposals": ["dotfiles,ssh", "dotfiles"],
+      "default": "dotfiles,ssh",
       "description": "Integrations to install at the end of the script, a comma-separated list of integrations"
     }
   },
