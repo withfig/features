@@ -14,3 +14,4 @@ To use the feature from this repository, add the desired features to devcontaine
     }
 }
 ```
+mcr.microsoft.com/devcontainers/base:ubuntu
